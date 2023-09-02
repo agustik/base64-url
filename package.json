@@ -3,6 +3,7 @@
   "version": "2.3.3",
   "description": "Base64 encode, decode, escape and unescape for URL applications",
   "main": "index.js",
+  "module": "index.mjs",
   "files": ["LICENSE", "README.md", "index.js"],
   "scripts": {
     "coverage:open": "open coverage/index.html",
@@ -10,17 +11,15 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test": "standard --fix && nyc --reporter=html --reporter=text tape test.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
-    "url": "git://github.com/joaquimserafim/base64-url.git"
+    "url": "git://github.com/agustik/base64-url.git"
   },
   "keywords": ["base64", "base64url"],
   "author": "@joaquimserafim",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joaquimserafim/base64-url/issues"
-  },
-  "homepage": "https://github.com/joaquimserafim/base64-url",
+  "homepage": "https://github.com/agustik/base64-url",
   "devDependencies": {
     "coveralls": "^3.0.0",
     "nyc": "^14.1.1",
@@ -28,7 +27,6 @@
     "standard": "^10.0.3",
     "tape": "^4.8.0"
   },
-  "pre-commit": ["test", "coverage:check"],
   "engines": {
     "node": ">=6"
   }
