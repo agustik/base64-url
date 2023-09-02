@@ -31,7 +31,9 @@
     "node": ">=6"
   },
   "exports": {
-    "import": "./index.mjs",
-    "require": "./index.js"
+    "./*": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
   }
 }
